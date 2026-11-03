@@ -215,7 +215,7 @@
   left: 50%;
   width: clamp(198px, 15.26vw, 290px);
   /* Height is 1.23 times the width. */
-  aspect-ratio: 1 / 1.5;
+  aspect-ratio: 1 / 1.23;
   border-radius: clamp(18px, 1.5vw, 24px);
   transform: translate3d(-50%, -50%, 0);
   perspective: 1200px;

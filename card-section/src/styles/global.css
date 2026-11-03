@@ -1,5 +1,7 @@
 @import './experience.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap');
+
 :root {
   color: #f5e9df;
   background: #211f1f;

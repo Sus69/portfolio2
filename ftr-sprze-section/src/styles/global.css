@@ -1,0 +1,33 @@
+@import './footer.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  color: #f4efe8;
+  background: #17151b;
+  font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-width: 320px;
+  background: #17151b;
+  scroll-behavior: auto;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #17151b;
+}
+
+a { color: inherit; }
+a, button { -webkit-tap-highlight-color: transparent; }
+
+::selection {
+  color: #17151b;
+  background: #c8ff4d;
+}

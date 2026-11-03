@@ -5,6 +5,7 @@ async function scrollTo(page: Page, progress: number) {
     const scene = document.querySelector<HTMLElement>('.scene')!
     const distance = scene.clientWidth < 700 ? 5400 : 7000
     window.scrollTo(0, fraction * distance)
+    document.dispatchEvent(new Event('scroll'))
   }, progress)
   // Allow the scrub's deliberate catch-up to finish before observing a frame.
   await page.waitForTimeout(850)

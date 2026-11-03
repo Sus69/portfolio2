@@ -1,0 +1,22 @@
+{
+  "name": "testing3",
+  "private": true,
+  "workspaces": [
+    "card-section",
+    "txt-img-cvrt-section",
+    "ftr-sprze-section"
+  ],
+  "scripts": {
+    "dev:cards": "npm run dev --workspace=card-section",
+    "dev:projects": "npm run dev --workspace=txt-img-cvrt-section",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build:cards": "npm run build --workspace=card-section",
+    "build:projects": "npm run build --workspace=txt-img-cvrt-section",
+    "dev:footer": "npm run dev --workspace=ftr-sprze-section",
+    "build:footer": "npm run build --workspace=ftr-sprze-section",
+    "test:cards": "npm run test --workspace=card-section",
+    "test:projects": "npm run test --workspace=txt-img-cvrt-section",
+    "test:footer": "npm run test --workspace=ftr-sprze-section"
+  }
+}
