@@ -1,0 +1,19 @@
+{
+  "name": "fluid-identity-reveal",
+  "version": "1.0.0",
+  "description": "Interactive Fluid Identity Reveal - Organic Liquid Portrait Transformation",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "serve": "npx serve -l 3000 .",
+    "python": "python -m http.server 3000"
+  },
+  "keywords": [
+    "webgl",
+    "fluid-simulation",
+    "interactive",
+    "identity-reveal"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
