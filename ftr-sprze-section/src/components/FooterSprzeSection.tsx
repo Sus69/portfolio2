@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ThemeCat } from './ThemeCat'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -216,6 +217,10 @@ export function FooterSprzeSection() {
               <div className="ftr-footer-main">
                 <p className="ftr-footer-kicker">have a nice day<span>↗</span></p>
                 <h2>See you<br />around.</h2>
+              </div>
+              <div className="ftr-cat-row">
+                <p className="theme-note--footer">a cat supervised this build</p>
+                <ThemeCat className="theme-cat--footer" />
               </div>
               <div className="ftr-footer-bottomline">
                 <span>© 2025 — 2026</span>

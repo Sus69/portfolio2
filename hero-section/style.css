@@ -1,28 +1,29 @@
 /* ========================================================
    MANAAL MAPLE — PORTFOLIO DESIGN SYSTEM & THEME
    Visual Direction: Whimsical Organic Surrealism & Editorial Craft
-   Colors: Cool Cloud White (#F2F5FA), Saturated Pink (#ff758f),
-           Orange (#ff9f43), Yellow (#fbc531), Cobalt (#2e86de),
-           Midnight Blue (#13182b)
+   Colors: Cool Cloud White (#F2F5FA), Bubblegum Pink (#FF3F70),
+           Sunset Orange (#FF8552), Golden Yellow (#FFD447),
+           Electric Cobalt (#3548C8), Midnight Blue (#14245C)
    ======================================================== */
 
 :root {
   --color-bg-cloud: #F2F5FA;
   --color-bg-pure: #ffffff;
-  --color-midnight: #13182b;
-  --color-midnight-muted: #475569;
-  --color-midnight-soft: rgba(19, 24, 43, 0.65);
-  --color-pink: #ff758f;
-  --color-pink-soft: #ffe3ec;
-  --color-pink-glow: rgba(255, 117, 143, 0.35);
-  --color-cobalt: #2e86de;
-  --color-orange: #ff9f43;
-  --color-yellow: #fbc531;
+  --color-midnight: #14245C;
+  --color-midnight-muted: rgba(20, 36, 92, 0.62);
+  --color-midnight-soft: rgba(20, 36, 92, 0.65);
+  --color-pink: #FF3F70;
+  --color-pink-soft: rgba(255, 63, 112, 0.12);
+  --color-pink-glow: rgba(255, 63, 112, 0.35);
+  --color-cobalt: #3548C8;
+  --color-orange: #FF8552;
+  --color-yellow: #FFD447;
   --color-cream: #fbf5ea;
-  --color-border-dark: #13182b;
+  --color-border-dark: #14245C;
 
-  --font-family-display: "Syne", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-family-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-display: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-hand: "Caveat", cursive;
 }
 
 * {
@@ -128,15 +129,15 @@ body {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1.5px solid var(--color-border-dark);
-  border-radius: 999px;
-  box-shadow: 0 4px 16px rgba(19, 24, 43, 0.08);
+  border-radius: 28px 32px 26px 34px / 32px 26px 34px 28px;
+  box-shadow: 0 4px 16px rgba(20, 36, 92, 0.08);
   pointer-events: auto;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-pill:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(19, 24, 43, 0.12);
+  box-shadow: 0 6px 20px rgba(20, 36, 92, 0.12);
 }
 
 .nav-link {
@@ -146,14 +147,14 @@ body {
   color: var(--color-midnight);
   text-decoration: none;
   padding: 8px 18px;
-  border-radius: 999px;
+  border-radius: 16px 20px 14px 22px / 20px 14px 22px 16px;
   transition: all 0.2s ease;
   letter-spacing: -0.01em;
 }
 
 .nav-link:hover {
   color: var(--color-midnight);
-  background: rgba(19, 24, 43, 0.06);
+  background: rgba(20, 36, 92, 0.06);
 }
 
 .nav-link.active {
@@ -169,21 +170,21 @@ body {
   right: 40px;
   width: 52px;
   height: 52px;
-  border-radius: 50%;
+  border-radius: 48% 52% 50% 50% / 52% 48% 52% 48%;
   background: var(--color-pink);
   border: 1.5px solid var(--color-border-dark);
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(255, 117, 143, 0.35);
+  box-shadow: 0 4px 16px rgba(255, 63, 112, 0.35);
   pointer-events: auto;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
 }
 
 .profile-btn:hover {
   transform: scale(1.08) rotate(4deg);
-  box-shadow: 0 8px 24px rgba(255, 117, 143, 0.50);
+  box-shadow: 0 8px 24px rgba(255, 63, 112, 0.50);
 }
 
 .profile-icon {
@@ -237,6 +238,21 @@ body {
   border-radius: 2px;
 }
 
+/* Hand-drawn note under the editorial statement — Whimsical Editorial */
+.hero-cat-note {
+  position: absolute;
+  top: 58%;
+  left: 210px;
+  transform: rotate(-3deg);
+  font-family: var(--font-family-hand);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-pink);
+  text-shadow: 0 1px 4px rgba(242, 245, 250, 0.9);
+  pointer-events: none;
+}
+
 /* 5. Subtle Portrait Interaction Hint */
 .portrait-hint {
   position: absolute;
@@ -282,14 +298,14 @@ body {
   background: var(--color-cream);
   border: 1.5px solid var(--color-border-dark);
   border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(19, 24, 43, 0.14), 0 2px 6px rgba(19, 24, 43, 0.08);
+  box-shadow: 0 12px 28px rgba(20, 36, 92, 0.14), 0 2px 6px rgba(20, 36, 92, 0.08);
   transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
   transform: rotateY(-6deg) rotateX(4deg);
 }
 
 .retro-computer:hover {
   transform: rotateY(0deg) rotateX(0deg) translateY(-6px) scale(1.05);
-  box-shadow: 0 20px 36px rgba(19, 24, 43, 0.20), 0 4px 10px rgba(19, 24, 43, 0.10);
+  box-shadow: 0 20px 36px rgba(20, 36, 92, 0.20), 0 4px 10px rgba(20, 36, 92, 0.10);
 }
 
 /* Feline Cat Ears on Top of CRT Monitor */
@@ -400,7 +416,7 @@ body {
 .comp-vents span {
   width: 14px;
   height: 2px;
-  background: rgba(19, 24, 43, 0.25);
+  background: rgba(20, 36, 92, 0.25);
   border-radius: 1px;
 }
 
@@ -449,15 +465,15 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 10px 18px;
-  border-radius: 18px;
-  border: 1.5px solid rgba(19, 24, 43, 0.10);
-  box-shadow: 0 6px 20px rgba(19, 24, 43, 0.05);
+  border-radius: 18px 24px 16px 26px / 24px 16px 26px 18px;
+  border: 1.5px solid rgba(20, 36, 92, 0.10);
+  box-shadow: 0 6px 20px rgba(20, 36, 92, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .identity-block:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(19, 24, 43, 0.08);
+  box-shadow: 0 10px 24px rgba(20, 36, 92, 0.08);
 }
 
 .identity-name {
@@ -567,7 +583,7 @@ body {
 
 .portfolio-section {
   padding: 100px 48px;
-  border-top: 1.5px solid rgba(19, 24, 43, 0.08);
+  border-top: 1.5px solid rgba(20, 36, 92, 0.08);
 }
 
 .section-container {
@@ -581,6 +597,7 @@ body {
 
 .section-tag {
   display: inline-block;
+  transform: rotate(-2deg);
   font-family: var(--font-family-body);
   font-size: 12px;
   font-weight: 700;
@@ -616,17 +633,17 @@ body {
 .project-card {
   background: var(--color-bg-pure);
   border: 1.5px solid var(--color-border-dark);
-  border-radius: 22px;
+  border-radius: 22px 28px 20px 30px / 28px 20px 30px 22px;
   padding: 36px 32px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 24px rgba(19, 24, 43, 0.04);
+  box-shadow: 0 10px 24px rgba(20, 36, 92, 0.04);
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 36px rgba(19, 24, 43, 0.10);
+  box-shadow: 0 18px 36px rgba(20, 36, 92, 0.10);
 }
 
 .project-card-header {
@@ -642,6 +659,11 @@ body {
   font-weight: 800;
   color: var(--color-pink);
 }
+
+.projects-grid .project-card:nth-child(2) .project-num { color: var(--color-cobalt); }
+.projects-grid .project-card:nth-child(3) .project-num { color: var(--color-orange); }
+.stack-columns .stack-col:nth-child(2) .stack-col-title { border-bottom-color: var(--color-orange); }
+.stack-columns .stack-col:nth-child(3) .stack-col-title { border-bottom-color: var(--color-yellow); }
 
 .project-category {
   font-size: 12px;
@@ -680,8 +702,8 @@ body {
   font-weight: 600;
   padding: 5px 12px;
   background: var(--color-bg-cloud);
-  border: 1px solid rgba(19, 24, 43, 0.12);
-  border-radius: 999px;
+  border: 1px solid rgba(20, 36, 92, 0.12);
+  border-radius: 14px 18px 12px 20px / 18px 12px 20px 14px;
   color: var(--color-midnight);
 }
 
@@ -695,7 +717,7 @@ body {
 .stack-col {
   background: var(--color-bg-pure);
   border: 1.5px solid var(--color-border-dark);
-  border-radius: 20px;
+  border-radius: 20px 26px 18px 28px / 26px 18px 28px 20px;
   padding: 32px;
 }
 
@@ -738,7 +760,7 @@ body {
 .contact-card {
   background: var(--color-bg-pure);
   border: 1.5px solid var(--color-border-dark);
-  border-radius: 28px;
+  border-radius: 28px 34px 26px 36px / 34px 26px 36px 28px;
   padding: 56px 48px;
   display: flex;
   justify-content: space-between;
@@ -780,8 +802,8 @@ body {
   font-weight: 600;
   padding: 8px 16px;
   background: var(--color-bg-cloud);
-  border: 1px solid rgba(19, 24, 43, 0.12);
-  border-radius: 999px;
+  border: 1px solid rgba(20, 36, 92, 0.12);
+  border-radius: 14px 18px 12px 20px / 18px 12px 20px 14px;
   color: var(--color-midnight);
 }
 
@@ -792,7 +814,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   padding-top: 32px;
-  border-top: 1px solid rgba(19, 24, 43, 0.10);
+  border-top: 1px solid rgba(20, 36, 92, 0.10);
 }
 
 .footer-copy {

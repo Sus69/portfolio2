@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { projects, type Project } from '../data/projects'
+import { ThemeCat } from './ThemeCat'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -165,6 +166,8 @@ export function ProjectShowcase() {
 
   return (
     <section id="projects" className="projects-section" ref={sectionRef} aria-label="Selected projects">
+      <p className="theme-note--projects">psst — hover a letter</p>
+      <ThemeCat className="theme-cat--projects" />
       <div className="projects-scroll-feedback" aria-hidden="true">
         <span className="projects-scroll-feedback__track"><span className="projects-scroll-feedback__fill" /></span>
         {projects.map((project) => <span className="projects-scroll-feedback__tick" key={project.name} />)}

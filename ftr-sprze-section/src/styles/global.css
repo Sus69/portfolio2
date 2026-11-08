@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fredoka:wght@500;600;700&display=swap');
 @import './footer.css';
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root {
-  color: #f4efe8;
-  background: #17151b;
-  font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  /* Whimsical Editorial — Manaal Maple */
+  --cloud: #F2F5FA;
+  --pink: #FF3F70;
+  --orange: #FF8552;
+  --yellow: #FFD447;
+  --cobalt: #3548C8;
+  --midnight: #14245C;
+}
+
+:root {
+  color: #14245C;
+  background: #F2F5FA;
+  font-family: 'DM Sans', Georgia, 'Times New Roman', serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -13,7 +23,7 @@
 
 html {
   min-width: 320px;
-  background: #17151b;
+  background: #F2F5FA;
   scroll-behavior: auto;
 }
 
@@ -21,13 +31,13 @@ body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
-  background: #17151b;
+  background: #F2F5FA;
 }
 
 a { color: inherit; }
 a, button { -webkit-tap-highlight-color: transparent; }
 
 ::selection {
-  color: #17151b;
-  background: #c8ff4d;
+  color: #F2F5FA;
+  background: #FF3F70;
 }

@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { Card } from './Card'
+import { ThemeCat } from './ThemeCat'
 import { toolkitCards } from '../data/cards'
 import { createCardTimeline } from '../animations/cardTimeline'
 
@@ -54,6 +55,8 @@ export function ScrollExperience() {
               {toolkitCards.map((card, index) => <span className="progress-bar" key={card.id} data-step={index} />)}
             </div>
             <p className="scroll-hint">scroll to explore <span>↓</span></p>
+            <p className="theme-note--cards">a cat supervised this build</p>
+            <ThemeCat className="theme-cat--cards" />
           </div>
 
           <div className="card-stage">
